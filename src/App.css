@@ -1,3 +1,4 @@
+@import '~antd/dist/antd.css';
 .App {
   text-align: center;
 }
@@ -25,7 +26,49 @@
 .App-link {
   color: rgb(112, 76, 182);
 }
+.calculator-title {
+  font-size: 30px; 
+  width: 400px;
+  padding: 10px 10px;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+  border-radius: 2px; 
+  color: #fff;
+  border-color: #1890ff;
+  background: #1890ff; 
+}
+.mainCalc {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+.screen-row input {
+  width: 400px;
+  background: #ddd;
+  border: 0px;
+  color: #222;
+  padding: 10px;
+  text-align: right; 
+  margin: 1px;
+}
 
+input[type="button"]:active {
+  background: #ccc;
+}
+
+.keyPad{ 
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 1rem;
+}
+.key-button{
+  margin: 1px;
+  width: 5rem;
+  height: 5rem;
+}
 @keyframes App-logo-float {
   0% {
     transform: translateY(0);
